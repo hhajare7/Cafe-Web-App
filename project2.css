@@ -1,0 +1,170 @@
+/*CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*Navigation  bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0px;
+}
+
+/* Navigation  bar: Logo and Image */
+
+#logo img{
+    height: 40px;
+    margin: 10px 15px;
+}
+
+/* Navigation  bar: List Styling */
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    padding: 3px 22px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+#navbar ul li a:hover{
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 618px;
+    justify-content: center;
+    align-items: center;
+
+}
+#home::before{
+    content: "";
+    position: absolute;
+    background: url('bg1.jpg') no-repeat center center/cover;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#home h1{
+    color:rgb(250, 103, 4);
+    text-align: center;
+    font-family: 'Lexend Deca', sans-serif;
+
+    
+}
+#home p{
+    color: green;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+}
+/*services Section*/
+#services{
+    margin: 30px;
+    display: flex;
+}
+
+#services .box{
+    border: 2px solid red;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(176, 177, 177);
+}
+
+#services .box img{
+    height: 150px;
+    display: block;
+    margin: auto;
+}
+#services .box p{
+    font-family: 'Times New Roman', Times, serif;
+}
+/*Client Section*/
+#clientsection{
+    height: 344px;
+    text-align: center;
+    position: relative;
+
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 100px;
+
+}
+
+.clientitem{
+    padding: 34px;
+
+}
+
+/* Contact Section*/
+#contact{
+    position: relative;
+}
+
+/*Utility Classes*/
+.primary{
+    font-size: 2.8rem;
+    padding: 12px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+}
+.secondary{
+    font-size: 2rem;
+    padding: 12px;
+    font-family: 'Oleo Script Swash Caps', cursive;
+
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid grey;
+    background-color: rgb(250, 103, 4);
+    color: white;
+    margin: 17;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
